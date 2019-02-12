@@ -1,14 +1,14 @@
 <html>
 
 <head>
-    <title>IMG Workshop '18</title>
-    <link rel="stylesheet" href="blog.css">
+    <title>Post Your Blog</title>
+    <link rel="stylesheet" href="blog-1.css">
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-sm">
-        <a class="navbar-brand" href="https://img.channeli.in"> <h3>Workshop '18</h3> </a>
+        <a class="navbar-brand" href="#"> <h3>Blog Page</h3> </a>
         <a href="blog.php"><h3>Blogs</h3></a>
     </nav>
 
@@ -17,8 +17,50 @@
         <div class="form-header">
                 <h3> Add Your Blog </h3>
         </div>
+
+        <form name="my_form" action="insert.php" method="POST" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="post_title">Post Title</label>
+                <input type="text" name="post_title" id="post_title" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="post_content">Post Content</label>
+                <textarea id="post_content" name="content" class="form-control" rows="10"></textarea>
+                
+            </div>
+
+            <div class="form-group">
+                <label for="post_author">Author</label>
+                <input type="text" name="author" class="form-control" id="post_author">
+            </div>
+
+            <div>
+                <input type="submit" class="btn" value="Submit">
+            </div>
+        </form>
     
     </div>
+    <script type="text/javascript">
+        function validateForm() {
+        var x = document.forms["my_form"]["post_title"].value;
+            if (x == "") {
+                alert("Title cannot be empty");
+            return false;
+             }
+        var x = document.forms["my_form"]["post_content"].value;
+            if (x == "") {
+                alert("Blog need to have some content");
+            return false;
+             }
+        var x = document.forms["my_form"]["post_author"].value;
+            if (x == "") {
+                alert("Please fill out name of the author");
+            return false;
+             }          
+        
+}
+    </script>
 
 </body>
 

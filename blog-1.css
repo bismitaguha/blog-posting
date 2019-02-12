@@ -5,7 +5,7 @@
 
 .navbar{
     color:white;
-    font-family: 'Merriweather', serif;
+    font-family: 'Helvetica';
     display: flex;
     justify-content: space-between;
     margin-bottom:70px;
@@ -65,7 +65,7 @@ h3, h1{
 .blog-info{
     display: flex;
     flex-direction: column;
-    font-family: 'Merriweather', serif;
+    font-family: 'Helvetica';
     margin-left:5px;
     margin-bottom:5px;
 }
@@ -74,19 +74,37 @@ h3, h1{
 /* CSS for page `add_blog.html` */
 
 .form-header{
-    margin-bottom:40px;
+    padding-top: 2%;
+    margin-bottom: 3%;
 }
 
 label{
-    font-family: 'Merriweather', serif;
+    font-family: 'Helvetica';
 }
 
 .btn{
     background-color: white;
-    border:1px solid #ced4da;
-    font-family: 'Merriweather', serif;
+    border:2px solid #ced4da;
+    font-family: 'Helvetica';
 }
 
 .content{
     height: 100px;
+}
+.new {
+    font-size: 1.5em;
+    margin-top: 20%;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.welcome {
+    margin-top: 20%;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
